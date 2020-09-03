@@ -1,0 +1,211 @@
+---
+title: <span style="color:#FFFFFF">The Data Science</span> <span style="color:#FFFFFF"> Toolbox</span>
+
+author: <span style="color:#FFFFFF">twitter:@rinpharma github:philbowsher</span>
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [ "include/rstudio.css" ]
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+  - images
+---
+
+
+```{r, include=FALSE}
+rmarkdown::output_metadata$set(
+  rsc_output_files = list.files("images", recursive = TRUE, full.names = TRUE)
+)
+```
+
+class: subtitle-slide, white, middle, center
+
+# I have always been inspired by those who can capture the landscape with a minimum of brushstrokes
+
+---
+
+class: panel-narrow-slide, left
+
+
+class: subtitle-slide, white, middle, center
+
+# http://rstd.io/phil-me-out
+
+---
+
+
+
+
+# Tools of the 2000s
+- Excel
+- Base
+- Data Step
+- ODS
+- Procs
+- Macro
+- Macro Varables
+- [first choice for many recent graduates](http://washstat.org/presentations/20181024/Schuette.pdf)
+---
+
+class: panel-narrow-slide, left
+
+# The Data Science Toolbox
+- [Today](https://rstudio-pubs-static.s3.amazonaws.com/443271_e3d08417368642e19588f0bbdede90d7.html#(16)
+- R
+- python
+- git, docker, CI/CD
+- job scheduling
+- apps, reports & apis
+- data viz, dashboards
+- Machine Learning, spark
+---
+
+class: panel-narrow-slide, left
+
+# Talk Learning Objectives
+- ggplot2 & htmlwidgets
+- RMD & Notebooks
+- Parameters in Rmarkdown
+- Publishing
+- Scheduling
+- Emails
+- Flexdashboard
+- Shiny
+---
+
+
+
+
+class: panel-narrow-slide, left
+
+# After the talk, go here
+- https://rstudio.cloud/project/395212
+- https://rstudio.cloud/project/1011147
+
+---
+
+class: panel-narrow-slide, left
+
+# By the Way, Books…
+- https://mastering-shiny.org/
+- [r4ds](http://r4ds.had.co.nz) & [RStudio Cloud](https://rstudio.cloud/)
+- https://r-graphics.org/
+- http://www-bcf.usc.edu/~gareth/ISL/
+- http://appliedpredictivemodeling.com/
+- https://bookdown.org/yihui/rmarkdown/
+- [Text Mining](https://www.tidytextmining.com/) & [Tidymodel](https://www.tidymodels.org/books/)
+- https://adv-r.hadley.nz/
+- https://plotly-r.com/
+- https://therinspark.com/
+---
+
+class: subtitle-slide, white, middle, center
+
+# Open README in shiny-days-master Folder
+- https://github.com/mikeasilva/blsAPI
+
+---
+
+class: subtitle-slide, white, middle, center
+
+# ggplot2 01-adverse-events-plots.R
+
+---
+
+class: panel-narrow-slide, left
+
+# Deploy ggplot2 To RStudio Connect
+- http://ec2-52-15-220-29.us-east-2.compute.amazonaws.com/rsconnect/
+
+---
+
+class: subtitle-slide, white, middle, center
+
+# 02_building_blocks.Rmd
+
+---
+
+
+class: subtitle-slide, white, middle, center
+
+# 03-flexdashboard-skeleton.Rmd
+
+---
+
+class: subtitle-slide, white, middle, center
+
+# 04-adverse-events.Rmd
+
+---
+
+class: subtitle-slide, white, middle, center
+
+# RMD_NO_Shiny.Rmd
+
+---
+
+class: subtitle-slide, white, middle, center
+
+# 05-adverse-events-shiny.Rmd
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Emails in  RStudio Connect
+- https://rviews.rstudio.com/2019/09/04/how-to-send-custom-e-mails-with-rstudio-connect/
+- blastula::prepare_rsc_example_files()
+- connect_examples Folder
+- connect-example-main.Rmd
+- View last code chunk
+- Deploy to RStudio Connect
+- /webmail/?_task=mail&_mbox=INBOX
+---
+
+
+class: panel-narrow-slide, left
+
+# Python & Git
+- https://blog.rstudio.com/2019/06/24/rstudio-connect-1-7-6/
+- https://solutions.rstudio.com/python/overview/
+- https://github.com/sol-eng/python-examples
+- https://github.com/sol-eng/python-examples/tree/master/jupyter-static-visualization
+- In RSC, go to New Content, and click New Content from Git Repository
+---
+
+
+class: panel-narrow-slide, left
+
+# Deep Learning
+- https://github.com/philbowsher/Workshop-R-Tensorflow-Scientific-Computing
+- https://rstudio.cloud/project/1011147
+---
+
+# APIs in RSC
+- https://solutions.rstudio.com/examples/tensorflow-overview/
+- https://solutions.rstudio.com/examples/rest-apis-overview/
+- Open FDA
+---
+
+class: panel-narrow-slide, left
+
+# Pins in RSC
+- https://blog.rstudio.com/2019/09/23/rstudio-connect-1-7-8-put-a-pin-in-it/
+- https://github.com/jthomasmock/reactable-presentation
+---
+
+
+class: subtitle-slide, white, middle, center
+
+# rstudio conference & rinpharma
+
+- rinpharma.com
+
+---
+
