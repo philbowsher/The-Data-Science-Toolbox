@@ -43,12 +43,12 @@ json <- fromJSON(response)
 
 unemployed_total <- creat_tib_from_json(json, 1)
 
-unemployed_total %>% rename(unemployed = value)
+unemployed_total <- unemployed_total %>% rename(unemployed = value)
 
 
 labor_force <- creat_tib_from_json(json, 2) 
 
-labor_force %>% rename(labor.force = value)
+labor_force <- labor_force %>% rename("labor.force" = value)
 # avg_hourly_earnings <- creat_tib_from_json(json, 3)
 
 
@@ -57,11 +57,14 @@ labor_force %>% rename(labor.force = value)
 
 The first dataset is looking at all employees in the private sector, and is seasonally adjusted. Each number is in the the thousands of employees.
 ```{r}
-left_join(unemployed_total, labor_force)
+unemployed_labor_force <- left_join(unemployed_total, labor_force)
+write_csv(unemployed_labor_force, 'unemployed_labor_force.csv')
+unemployed_labor_force
 ```
 
 The second dataset is looking at the average weekly hours worked of all employees in the private sector and is seasonally adjusted.
 ```{r}
+labor_force %>% write_csv('labor_force.csv')
 labor_force
 ```
 
